@@ -19,11 +19,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className='flex items-center justify-center bg-slate-900 w-screen h-screen  text-white '>
-        <section className=' bg-slate-800 max-h-lg max-w-xs  p-5 rounded-lg  shadow-black shadow-sm  '>
+        <section className=' bg-slate-800 max-h-lg max-w-xs  p-5 rounded-xl  shadow-black shadow-sm  '>
           <div className='m-auto '>
-            <div className='bg-cyan-300 rounded-xl '>
-              <Image src={view} className='absolute '  alt='view icon'/>
-              <a><Image className='m-auto rounded-xl mb-5 cursor-pointer hover:opacity-20 ' src={nftimg} alt='NFT Equilibrium'/></a>
+            <div className='rounded-xl relative grid place-items-center group mb-5 hover:bg-cyan-300'>
+              <Image src={view} className='absolute group-hover:block hidden z-10'alt='view icon'/>
+              <Image className='m-auto rounded-xl  cursor-pointer group-hover:opacity-25' src={nftimg} alt='NFT Equilibrium'/>
             </div>
             <div>
               <a><h1 className='  text-xl my-2 cursor-pointer hover:text-cyan-300 font-bold'>Equilibrium #3429</h1></a>
