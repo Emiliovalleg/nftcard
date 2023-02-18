@@ -26,7 +26,7 @@ export default function Home() {
               <Image className='m-auto rounded-xl  cursor-pointer group-hover:opacity-25 duration-500' src={nftimg} alt='NFT Equilibrium'/>
             </div>
             <div>
-              <a><h1 className='  text-xl my-2 cursor-pointer hover:text-cyan-300 font-bold'>Equilibrium #3429</h1></a>
+              <h1 className='  text-xl my-2 cursor-pointer hover:text-cyan-300 font-bold'>Equilibrium #3429</h1>
               <p className=' font-extralight text-slate-400 mb-4 '>Our Equilibrium collection promotes balance and calm.</p>
             </div>
             <div className='flex  justify-between   border-gray-600 border-b pb-4 '>
@@ -41,7 +41,7 @@ export default function Home() {
             </div>
             <div className="flex mt-3 ">
               <Image className='w-8 h-8  border  mr-3 rounded-full ' src={avatar} alt='Profile creator Picture'/>
-              <h1 className=' font-thin text-slate-400'>Creator of <a className='cursor-pointer text-white hover:text-cyan-300 font-normal'>Jules Wyvern</a></h1>
+              <h1 className=' font-thin text-slate-400'>Creator of <span className='cursor-pointer text-white hover:text-cyan-300 font-normal'>Jules Wyvern</span> </h1>
             </div> 
           </div>
         </section>
