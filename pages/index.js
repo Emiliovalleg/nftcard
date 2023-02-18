@@ -2,6 +2,10 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import nftimg from "../public/image-equilibrium.jpg"
+import avatar from "../public/image-avatar.png"
+import ethereum from "../public/icon-ethereum.svg"
+import view from "../public/icon-view.svg"
+import time from "../public/icon-clock.svg"
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,21 +19,29 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className='flex items-center justify-center bg-slate-900 w-screen h-screen  text-white '>
-        <section className=' bg-slate-800 max-h-lg max-w-xs  p-5 rounded-lg '>
+        <section className=' bg-slate-800 max-h-lg max-w-xs  p-5 rounded-lg  shadow-black shadow-sm  '>
           <div className='m-auto '>
-            <div>
-              <Image className='max- m-auto  rounded-lg pb-8' src={nftimg} alt='NFT Equilibrium'/>
+            <div className='bg-cyan-300 rounded-xl '>
+              <Image src={view} className='absolute '  alt='view icon'/>
+              <a><Image className='m-auto rounded-xl mb-5 cursor-pointer hover:opacity-20 ' src={nftimg} alt='NFT Equilibrium'/></a>
             </div>
             <div>
-              <h1>Equilibrium #3429</h1>
-              <p>Our Equilibrium collection promotes balance and calm.</p>
+              <a><h1 className='  text-xl my-2 cursor-pointer hover:text-cyan-300 font-bold'>Equilibrium #3429</h1></a>
+              <p className=' font-extralight text-slate-400 mb-4 '>Our Equilibrium collection promotes balance and calm.</p>
             </div>
-            <div className='flex justify-between'>
-              <h1>ICONS</h1>
-              <h1>TIME LEFT</h1>
+            <div className='flex  justify-between   border-gray-600 border-b pb-4 '>
+              <div className='flex max-h-5 '>
+                <Image src={ethereum} alt='ETH icon'/>
+                <h1 className='ml-2 text-cyan-300 '>0.041 ETH</h1>
+              </div>
+              <div className='flex max-h-5  align-middle '>
+                <Image className='w-auto ' src={time} alt=''/>
+                <h4 className='ml-1 text-slate-300 font-extralight text-sm'>3 days left</h4>
+              </div>
             </div>
-            <div className=" ">
-              <h1>Creator</h1>
+            <div className="flex mt-3 ">
+              <Image className='w-8 h-8  border  mr-3 rounded-full ' src={avatar} alt='Profile creator Picture'/>
+              <h1 className=' font-thin text-slate-400'>Creator of <a className='cursor-pointer text-white hover:text-cyan-300 font-normal'>Jules Wyvern</a></h1>
             </div> 
           </div>
         </section>
